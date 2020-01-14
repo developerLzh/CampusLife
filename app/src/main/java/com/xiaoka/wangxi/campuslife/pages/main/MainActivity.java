@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                     switchFragment(idleFragment, false);
                 } else if (index == 2) {
                     startActivity(new Intent(MainActivity.this, PublishActivity.class));
+                    mNavigationController.setSelect(old);//下标跳回上一个
                 } else if (index == 3) {
                     switchFragment(questionFragment, false);
                 } else if (index == 4) {
